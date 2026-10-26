@@ -1,0 +1,214 @@
+{
+  "stories": [
+    {
+      "id": "story_naruto_0",
+      "charId": "naruto",
+      "title": "You meet Naruto after hours",
+      "body": "You run into Naruto when the lights are low. They look surprised \u2014 then curious. The night is yours to steer.",
+      "likes": 200
+    },
+    {
+      "id": "story_sasuke_1",
+      "charId": "sasuke",
+      "title": "Training with Sasuke",
+      "body": "Sasuke challenges you to keep up. Sweat, banter, and something unspoken hang in the air.",
+      "likes": 237
+    },
+    {
+      "id": "story_sakura_2",
+      "charId": "sakura",
+      "title": "A secret Sakura almost tells",
+      "body": "Sakura starts a sentence, then stops. Whatever they almost said could change everything.",
+      "likes": 274
+    },
+    {
+      "id": "story_kakashi_3",
+      "charId": "kakashi",
+      "title": "Rain and Kakashi",
+      "body": "Caught under an awning with Kakashi. The rain won't stop. Neither will the tension.",
+      "likes": 311
+    },
+    {
+      "id": "story_hinata_4",
+      "charId": "hinata",
+      "title": "Caf\u00e9 corner with Hinata",
+      "body": "Hinata already ordered for you. Steam rises between you. Talk.",
+      "likes": 348
+    },
+    {
+      "id": "story_gaara_5",
+      "charId": "gaara",
+      "title": "You meet Gaara after hours",
+      "body": "You run into Gaara when the lights are low. They look surprised \u2014 then curious. The night is yours to steer.",
+      "likes": 385
+    },
+    {
+      "id": "story_luffy_6",
+      "charId": "luffy",
+      "title": "Training with Luffy",
+      "body": "Luffy challenges you to keep up. Sweat, banter, and something unspoken hang in the air.",
+      "likes": 422
+    },
+    {
+      "id": "story_zoro_7",
+      "charId": "zoro",
+      "title": "A secret Zoro almost tells",
+      "body": "Zoro starts a sentence, then stops. Whatever they almost said could change everything.",
+      "likes": 459
+    },
+    {
+      "id": "story_nami_8",
+      "charId": "nami",
+      "title": "Rain and Nami",
+      "body": "Caught under an awning with Nami. The rain won't stop. Neither will the tension.",
+      "likes": 496
+    },
+    {
+      "id": "story_sanji_9",
+      "charId": "sanji",
+      "title": "Caf\u00e9 corner with Sanji",
+      "body": "Sanji already ordered for you. Steam rises between you. Talk.",
+      "likes": 533
+    },
+    {
+      "id": "story_shanks_10",
+      "charId": "shanks",
+      "title": "You meet Shanks after hours",
+      "body": "You run into Shanks when the lights are low. They look surprised \u2014 then curious. The night is yours to steer.",
+      "likes": 570
+    },
+    {
+      "id": "story_goku_11",
+      "charId": "goku",
+      "title": "Training with Goku",
+      "body": "Goku challenges you to keep up. Sweat, banter, and something unspoken hang in the air.",
+      "likes": 607
+    },
+    {
+      "id": "story_vegeta_12",
+      "charId": "vegeta",
+      "title": "A secret Vegeta almost tells",
+      "body": "Vegeta starts a sentence, then stops. Whatever they almost said could change everything.",
+      "likes": 644
+    },
+    {
+      "id": "story_bulma_13",
+      "charId": "bulma",
+      "title": "Rain and Bulma",
+      "body": "Caught under an awning with Bulma. The rain won't stop. Neither will the tension.",
+      "likes": 681
+    },
+    {
+      "id": "story_piccolo_14",
+      "charId": "piccolo",
+      "title": "Caf\u00e9 corner with Piccolo",
+      "body": "Piccolo already ordered for you. Steam rises between you. Talk.",
+      "likes": 718
+    },
+    {
+      "id": "story_gojo_15",
+      "charId": "gojo",
+      "title": "You meet Gojo after hours",
+      "body": "You run into Gojo when the lights are low. They look surprised \u2014 then curious. The night is yours to steer.",
+      "likes": 755
+    },
+    {
+      "id": "story_yuji_16",
+      "charId": "yuji",
+      "title": "Training with Yuji",
+      "body": "Yuji challenges you to keep up. Sweat, banter, and something unspoken hang in the air.",
+      "likes": 792
+    },
+    {
+      "id": "story_megumi_17",
+      "charId": "megumi",
+      "title": "A secret Megumi almost tells",
+      "body": "Megumi starts a sentence, then stops. Whatever they almost said could change everything.",
+      "likes": 829
+    },
+    {
+      "id": "story_nobara_18",
+      "charId": "nobara",
+      "title": "Rain and Nobara",
+      "body": "Caught under an awning with Nobara. The rain won't stop. Neither will the tension.",
+      "likes": 866
+    },
+    {
+      "id": "story_geto_19",
+      "charId": "geto",
+      "title": "Caf\u00e9 corner with Geto",
+      "body": "Geto already ordered for you. Steam rises between you. Talk.",
+      "likes": 903
+    },
+    {
+      "id": "story_tanjiro_20",
+      "charId": "tanjiro",
+      "title": "You meet Tanjiro after hours",
+      "body": "You run into Tanjiro when the lights are low. They look surprised \u2014 then curious. The night is yours to steer.",
+      "likes": 940
+    },
+    {
+      "id": "story_nezuko_21",
+      "charId": "nezuko",
+      "title": "Training with Nezuko",
+      "body": "Nezuko challenges you to keep up. Sweat, banter, and something unspoken hang in the air.",
+      "likes": 977
+    },
+    {
+      "id": "story_zenitsu_22",
+      "charId": "zenitsu",
+      "title": "A secret Zenitsu almost tells",
+      "body": "Zenitsu starts a sentence, then stops. Whatever they almost said could change everything.",
+      "likes": 1014
+    },
+    {
+      "id": "story_inosuke_23",
+      "charId": "inosuke",
+      "title": "Rain and Inosuke",
+      "body": "Caught under an awning with Inosuke. The rain won't stop. Neither will the tension.",
+      "likes": 1051
+    },
+    {
+      "id": "story_giyu_24",
+      "charId": "giyu",
+      "title": "Caf\u00e9 corner with Giyu",
+      "body": "Giyu already ordered for you. Steam rises between you. Talk.",
+      "likes": 1088
+    },
+    {
+      "id": "story_eren_25",
+      "charId": "eren",
+      "title": "You meet Eren after hours",
+      "body": "You run into Eren when the lights are low. They look surprised \u2014 then curious. The night is yours to steer.",
+      "likes": 225
+    },
+    {
+      "id": "story_mikasa_26",
+      "charId": "mikasa",
+      "title": "Training with Mikasa",
+      "body": "Mikasa challenges you to keep up. Sweat, banter, and something unspoken hang in the air.",
+      "likes": 262
+    },
+    {
+      "id": "story_armin_27",
+      "charId": "armin",
+      "title": "A secret Armin almost tells",
+      "body": "Armin starts a sentence, then stops. Whatever they almost said could change everything.",
+      "likes": 299
+    },
+    {
+      "id": "story_levi_28",
+      "charId": "levi",
+      "title": "Rain and Levi",
+      "body": "Caught under an awning with Levi. The rain won't stop. Neither will the tension.",
+      "likes": 336
+    },
+    {
+      "id": "story_hange_29",
+      "charId": "hange",
+      "title": "Caf\u00e9 corner with Hange",
+      "body": "Hange already ordered for you. Steam rises between you. Talk.",
+      "likes": 373
+    }
+  ]
+}

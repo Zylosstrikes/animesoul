@@ -1,0 +1,76 @@
+{
+  "places": [
+    {
+      "id": "school",
+      "name": "School",
+      "emoji": "\ud83c\udfeb",
+      "blurb": "Classrooms, rooftops, after-school clubrooms."
+    },
+    {
+      "id": "cafe",
+      "name": "Caf\u00e9",
+      "emoji": "\u2615",
+      "blurb": "Quiet corners, shared tables, late shifts."
+    },
+    {
+      "id": "dorm",
+      "name": "Dorms",
+      "emoji": "\ud83d\udecf\ufe0f",
+      "blurb": "Shared rooms, hallway talks, midnight snacks."
+    },
+    {
+      "id": "office",
+      "name": "Office",
+      "emoji": "\ud83c\udfe2",
+      "blurb": "Bosses, coworkers, overtime tension."
+    },
+    {
+      "id": "beach",
+      "name": "Beach",
+      "emoji": "\ud83c\udf0a",
+      "blurb": "Summer arcs, boardwalks, sunset talks."
+    },
+    {
+      "id": "fantasy",
+      "name": "Fantasy",
+      "emoji": "\ud83e\ude84",
+      "blurb": "Academies, spires, magic halls."
+    },
+    {
+      "id": "game",
+      "name": "Game World",
+      "emoji": "\ud83c\udfae",
+      "blurb": "Ranked arenas, guild halls, boss lobbies."
+    },
+    {
+      "id": "modern",
+      "name": "Modern City",
+      "emoji": "\ud83c\udf03",
+      "blurb": "Rainy streets, trains, neon nights."
+    },
+    {
+      "id": "romance",
+      "name": "Romance",
+      "emoji": "\ud83d\udc98",
+      "blurb": "Soft tension, rivals-to-lovers energy."
+    },
+    {
+      "id": "anime",
+      "name": "Classic Anime",
+      "emoji": "\u2b50",
+      "blurb": "Familiar series faces and vibes."
+    },
+    {
+      "id": "adventure",
+      "name": "Adventure",
+      "emoji": "\ud83d\uddfa\ufe0f",
+      "blurb": "Crews, voyages, big dreams."
+    },
+    {
+      "id": "action",
+      "name": "Action",
+      "emoji": "\u26a1",
+      "blurb": "Fights, training arcs, power-ups."
+    }
+  ]
+}
