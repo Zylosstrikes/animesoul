@@ -494,12 +494,17 @@ button,.tile,.story,.chat-item,.moment-row,.soul-card{transition:transform .18s 
 :root{--glass:rgba(14,14,24,.8)}
 /* reduced motion */
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important;scroll-behavior:auto!important}.hero-slide>img{transform:none!important}}
+#to-top{position:fixed;right:1rem;bottom:calc(4.6rem + var(--safe,0px));width:44px;height:44px;border:0;border-radius:999px;background:linear-gradient(135deg,#ec4899,#8b5cf6);color:#fff;font-size:1.15rem;line-height:1;box-shadow:0 8px 22px rgba(139,92,246,.4);cursor:pointer;opacity:0;pointer-events:none;transform:translateY(8px);transition:opacity .2s ease,transform .2s ease;z-index:30}
+#to-top.on{opacity:1;pointer-events:auto;transform:none}
+#to-top:focus-visible{outline:2px solid #fff;outline-offset:3px}
+@media (prefers-reduced-motion:reduce){#to-top{transition:none}}
 
 </style>
 </head>
 <body>
 <div class="app">
   <div id="offline-bar" role="status"></div>
+  <button type="button" id="to-top" aria-label="Back to top">↑</button>
   <section class="view on" data-tab="discover">
     <div class="top"><div class="logo brand">AnimeSoul</div><div class="spacer"></div><span class="gem-pill" id="gems-top" title="Gems">💎 <span id="gems-top-n">120</span></span><button class="icon-btn" id="open-search" type="button" aria-label="Search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg></button></div>
     <div class="tabs" id="cat-tabs"></div>
@@ -575,6 +580,7 @@ button,.tile,.story,.chat-item,.moment-row,.soul-card{transition:transform .18s 
         <div class="me-row"><span>Message sounds</span><input type="checkbox" id="opt-snd" /></div>
         <div class="me-row"><span>Haptics</span><input type="checkbox" id="opt-hap" /></div>
         <div id="install-row"></div>
+        <button class="icon-btn pill" id="share-app" type="button">⇪ Share AnimeSoul</button>
         <button class="icon-btn pill" id="whats-new" type="button">✨ What's new</button>
       </div>
       <div class="v2card"><div class="v2h">Streak rewards <small id="streak-now"></small></div><div class="streak-row" id="streak-row"></div></div>
@@ -3531,10 +3537,30 @@ window.addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); _installE
 window.addEventListener("appinstalled",()=>{ _installEv=null; paintInstall(); toast("AnimeSoul installed 🎉") });
 function paintOnline(first){
   const b=$("#offline-bar"); if(!b) return;
-  if(navigator.onLine===false){ b.textContent="You're offline — saved chats still work"; b.className="on"; }
+  if(navigator.onLine===false){ b.textContent="You're offline — saved chats and the catalog still work"; b.className="on"; }
   else if(!first && b.classList.contains("on")){ b.textContent="Back online"; b.className="on ok"; setTimeout(()=>{ b.className="" },2000); }
 }
 window.addEventListener("offline",()=>paintOnline()); window.addEventListener("online",()=>paintOnline());
+
+function shareAnimeSoul(){
+  const data={title:"AnimeSoul",text:"Chat with anime characters on AnimeSoul",url:location.origin+"/"};
+  if(navigator.share){ navigator.share(data).catch(()=>{}); return; }
+  if(navigator.clipboard&&navigator.clipboard.writeText){ navigator.clipboard.writeText(data.url).then(()=>toast("Link copied")).catch(()=>{}); return; }
+  toast(data.url);
+}
+const shareBtn=$("#share-app"); if(shareBtn) shareBtn.onclick=shareAnimeSoul;
+
+(function(){
+  const btn=$("#to-top"); const scroller=$("#discover-scroll");
+  if(!btn||!scroller) return;
+  const sync=()=>{ btn.classList.toggle("on", scroller.scrollTop>360); };
+  scroller.addEventListener("scroll", sync, {passive:true});
+  btn.addEventListener("click", ()=>{ scroller.scrollTo({top:0, behavior:"smooth"}); });
+})();
+
+if("serviceWorker" in navigator){
+  navigator.serviceWorker.register("/sw.js").catch(()=>{});
+}
 
 /* ---- What's new + boot ---- */
 $("#whats-new").onclick=()=>{ openSheet("new-sheet") };
